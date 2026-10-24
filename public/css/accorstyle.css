@@ -1,0 +1,81 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Only affect the accordion section */
+.accordion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #E0F7FA, #FCE4EC); /* Soft gradient */
+}
+
+/* Scoped Accordion Styles */
+.accordion-container .accordion {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Floating Accordion Item */
+.accordion-container .accordion-item {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+.accordion-container .accordion-item header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+/* Arrow */
+.accordion-container .accordion-item header i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    color: #555;
+}
+
+/* Content */
+.accordion-container .accordion-item .content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #8d0e0e;
+    line-height: 1.6;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+
+/* Active State */
+.accordion-container .accordion-item.active header {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.accordion-container .accordion-item.active .content {
+    padding: 10px 20px;
+}
+
+/* Rotate Arrow */
+.accordion-container .accordion-item.active header i {
+    transform: rotate(45deg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .accordion-container .accordion {
+        width: 90%;
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Mother Farm India",
+  "description": "Premium farm-fresh pulses, aromatic spices, nutritious seeds, and grains sourced directly from trusted Indian farms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
