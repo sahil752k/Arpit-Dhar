@@ -4,9 +4,12 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
- return {
-  base: '/Arpit-Dhar/',
-  plugins: [react(), tailwindcss()],
+  return {
+    base: '/Arpit-Dhar/',
+    plugins: [react(), tailwindcss()],
+    // baaki existing configuration same rakho
+  };
+});
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
